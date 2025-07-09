@@ -1,0 +1,11 @@
+<!-- bg_earth_gradient.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#8B5E3C"
+                android:endColor="#F4F1EE"
+                android:angle="135"/>
+        </shape>
+    </item>
+</layer-list>

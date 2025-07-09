@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.AiNotesApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">#6D4C41</item> <!-- or your chosen dark earthy brown -->
+        <item name="android:windowLightStatusBar">false</item> <!-- for light text on dark bar -->
+    </style>
+
+    <style name="Theme.AiNotesApp" parent="Base.Theme.AiNotesApp" />
+
+</resources>

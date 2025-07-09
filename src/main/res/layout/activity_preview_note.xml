@@ -1,0 +1,114 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_earth_gradient_signup"
+    android:padding="24dp"
+    android:fitsSystemWindows="true">
+
+    <!-- Back Button -->
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:contentDescription="Back"
+        android:tint="#4E342E"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"/>
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:id="@+id/scrollContent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/backButton"
+        android:layout_above="@+id/bottomButtonLayout"
+        android:layout_marginTop="12dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:paddingTop="40dp"
+            android:paddingBottom="24dp">
+
+            <!-- Note Title -->
+            <TextView
+                android:id="@+id/previewNoteTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Note Title"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#3E2723"
+                android:gravity="center"
+                android:layout_marginBottom="12dp"
+                android:paddingHorizontal="12dp"/>
+
+            <!-- Timestamp -->
+            <TextView
+                android:id="@+id/previewNoteTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12 Jul, 9:00 AM"
+                android:textSize="14sp"
+                android:textColor="#6D4C41"
+                android:layout_marginBottom="24dp"/>
+
+            <!-- Note Content -->
+            <TextView
+                android:id="@+id/previewNoteContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Full content of the note goes here..."
+                android:textSize="16sp"
+                android:textColor="#5D4037"
+                android:lineSpacingExtra="6dp"
+                android:gravity="start"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginBottom="32dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Fixed Buttons at Bottom -->
+    <LinearLayout
+        android:id="@+id/bottomButtonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="8dp">
+
+        <Button
+            android:id="@+id/editNoteBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="✏️ Edit"
+            android:layout_marginEnd="12dp"
+            android:backgroundTint="#8B5E3C"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/deleteNoteBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🗑️ Delete"
+            android:layout_marginEnd="12dp"
+            android:backgroundTint="#B71C1C"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/shareNoteBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🔗 Share"
+            android:backgroundTint="#6D4C41"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+</RelativeLayout>

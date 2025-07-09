@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_earth_gradient_signup"
+    android:padding="24dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/headerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add New Note"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="24dp"
+            android:layout_marginEnd="16dp"
+            />
+
+
+        <EditText
+            android:id="@+id/titleEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter title"
+            android:background="@drawable/edittext_earth"
+            android:padding="16dp"
+            android:textColor="#333333"
+            android:textSize="16sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical">
+
+            <Button
+                android:id="@+id/titleMicButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="🎤 Speak Title"
+                android:backgroundTint="#8B5E3C"
+                android:textColor="#FFFFFF"
+                android:layout_marginEnd="8dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"/>
+
+            <Button
+                android:id="@+id/setReminderBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="⏰ Set Reminder"
+                android:backgroundTint="#8B5E3C"
+                android:textColor="#FFFFFF"
+                android:layout_marginStart="8dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"/>
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/contentEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="150dp"
+            android:maxLines="20"
+            android:inputType="textMultiLine"
+            android:hint="Enter note content"
+            android:gravity="top"
+            android:background="@drawable/edittext_earth"
+            android:padding="16dp"
+            android:layout_marginTop="16dp"
+            android:textColor="#333333"
+            android:textSize="16sp"/>
+
+
+        <Button
+            android:id="@+id/contentMicButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🎤 Speak Content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#8B5E3C"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/saveNoteBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Note"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#8B5E3C"
+            android:padding="16dp"/>
+    </LinearLayout>
+</ScrollView>
