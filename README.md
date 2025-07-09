@@ -22,6 +22,6 @@ An intelligent and minimalistic note-taking Android app featuring:
 4. Run the app on emulator/device
 
 ## 📎 Extras
-- Built with ❤️ by Taniya Shaw  
+- Built with ❤️ by Abhijit Mondal 
 - Developed during internship & personal learning
 
