@@ -14,8 +14,6 @@ An intelligent and minimalistic note-taking Android app featuring:
 - Android Jetpack (RecyclerView, ConstraintLayout, AlarmManager)
 - TextToSpeech API
 
-## 📷 Screenshots
-*(You can add image links here if needed)*
 
 ## 🛠️ How to Use
 1. Clone the repo  
